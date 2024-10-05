@@ -15,14 +15,13 @@ Yellow: #ffcb00
 
 body {
     background-color: rgb(69, 57, 192);
+    max-height: 100vh;
 }
 
 /* ----------------------------------------- HEADER HEADER HEADER HEADER ----------------------------------------- */
 
 .header {
     padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +74,7 @@ body {
 /* ----------------------------------------- FOOTER FOOTER FOOTER FOOTER ----------------------------------------- */
 
 .footer_bottom {
-    background-color: rgb(26, 37, 47);
+    background-color: rgb(25, 40, 54);
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -99,7 +98,7 @@ body {
     color: rgb(255, 255, 255);
     border-radius: 10px;
     margin: 20px;
-    margin-top: 70px;
+    margin-top: 95px;
     cursor: pointer;
 }
 
@@ -135,5 +134,19 @@ body {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.hero_image img:hover {
+    animation: scaleImage 0.5s forwards;
+}
+
+@keyframes scaleImage {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
 }
 
