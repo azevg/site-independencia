@@ -1,7 +1,8 @@
 /*
-Blue: #302681
-Green: #009440
-Yellow: #ffcb00
+Blue: #302681 (Original)   #0b6099 (Opção 2)
+Green: #009440 (Original)   
+Yellow: #ffcb00 (Original)   
+White: #d1d1d1
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
@@ -14,7 +15,7 @@ Yellow: #ffcb00
 }
 
 body {
-    background-color: rgb(64, 50, 167);
+    background-color: #d1d1d1;
     max-height: 100vh;
 }
 
@@ -25,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(48, 38, 129);
+    background-color: rgb(11, 96, 153);
 }
 
 .logo_bandeira img {
@@ -74,7 +75,7 @@ body {
 /* ----------------------------------------- FOOTER FOOTER FOOTER FOOTER ----------------------------------------- */
 
 .footer_bottom {
-    background-color: rgb(25, 40, 54);
+    background-color: rgb(39, 67, 92);
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -91,14 +92,13 @@ body {
 /* ----------------------------------------- MAIN HOME MAIN MAIN HOME ----------------------------------------- */
 
 .hero {
+    background-color: rgb(233, 233, 233);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin: 20px;
-    margin-top: 95px;
+    color: rgb(31, 31, 31);
+    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -112,7 +112,6 @@ body {
     font-size: 58px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
@@ -121,7 +120,6 @@ body {
     font-size: 22px;
     margin-bottom: 20px;
     line-height: 1.7;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
 }
 
