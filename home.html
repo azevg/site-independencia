@@ -25,7 +25,7 @@
         <section class="hero">
             <div class="hero_content">
                 <h1>A história da nossa liberdade!</h1>
-                <p>A Independência do Brasil, proclamada em 7 de setembro de 1822 por D. Pedro I, marca
+                <p id="p1">A Independência do Brasil, proclamada em 7 de setembro de 1822 por D. Pedro I, marca
                 um ponto crucial na história do país. Esse evento libertou o Brasil do domínio colonial
                 português e permitiu a contrução de uma identidade nacional própria, que, a partir desse momento,
                 começou a se organizar como um Estado independente, com suas próprias leis, instituições e símbolos nacionais.
@@ -33,6 +33,9 @@
                 de uma nação forte e independente. As consequências desse evento reverberam até os dias atuais, moldando a 
                 sociedade brasileira e sua identidade. Navegue através do site para descobrir mais coisas sobre esse evento histórico!
                 </p>
+                <div class="btn_container">
+                    <button class="reveal_btn" onclick="toggleParagraph()">Saiba mais</button>
+                </div>
             </div>
             <div class="hero_image"><img src="./assets/hero-img.png" alt="Quadro 'A Chegada de Dom Pedro I ao Brasil', Victor Meirelles, 1822"></div>
         </section>
@@ -43,5 +46,19 @@
         <p>&copy; 2024 Independência do Brasil. Todos os direitos reservados. Gabriel de Azevedo Silva - Aluno UniAcademia - Matrícula: 0900061928 - E-mail: gazevedojf2@gmail.com</p>
     </div>
     </footer>
+
+    <script>
+        function toggleParagraph() {
+            const paragraph = document.getElementById('p1');
+            const button = document.querySelector('.reveal_btn');
+            if (paragraph.style.display === 'none' || paragraph.style.display === '') {
+                paragraph.style.display = 'block';
+                button.textContent = 'Esconder';
+            } else {
+                paragraph.style.display = 'none';
+                button.textContent = 'Saiba mais';
+            }
+        }
+    </script>
 </body>
 </html>

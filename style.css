@@ -89,7 +89,7 @@ body {
     text-align: center;
 }
 
-/* ----------------------------------------- MAIN HOME MAIN MAIN HOME ----------------------------------------- */
+/* ----------------------------------------- HOME HOME HOME HOME ----------------------------------------- */
 
 .hero {
     background-color: rgb(233, 233, 233);
@@ -115,7 +115,8 @@ body {
     text-align: center;
 }
 
-.hero_content p {
+.hero_content #p1 {
+    display: none;
     font-family: 'Quicksand';
     font-size: 22px;
     margin-bottom: 20px;
@@ -148,3 +149,81 @@ body {
     }
 }
 
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reveal_btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ----------------------------------------- HISTORY HISTORY HISTORY ----------------------------------------- */
+
+.timeline {
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+    padding: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 7px;
+    background-color: brown;
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline ul li {
+    background-color: coral;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 4px rgba(0, 0, 0, .1);
+    width: 45%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+}
+
+.timeline ul li:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timeline ul li .date {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.timeline ul li .content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.timeline ul li img {
+    width: 90%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
