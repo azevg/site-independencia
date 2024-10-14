@@ -72,7 +72,7 @@ body {
     padding: 20px 0;
     width: 100%;
     bottom: 0;
-    position: static;
+    position: relative;
 }
 
 .footer_bottom p {
@@ -98,6 +98,17 @@ body {
     color: rgb(255, 255, 255);
     height: 80vh;
     animation: fadeIn 1s ease-in-out;
+}
+
+#hero_h1 {
+    font-family: 'Roboto Serif';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 139, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero_content {
@@ -203,12 +214,25 @@ body {
 /* ----------------------------------------- HISTORY HISTORY HISTORY ----------------------------------------- */
 
 .timeline {
-    width: 75%;
+    width: 100%;
     margin: 5px auto;
     margin-top: 30px;
     position: relative;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+#history_h1 {
+    font-family: 'Roboto Serif';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 139, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .timeline ul {
@@ -227,7 +251,7 @@ body {
     transform: translateX(-50%);
     width: 8px;
     height: 100%;
-    background-color: rgb(19, 41, 61);
+    background-color: rgb(0, 139, 0);
 }
 
 .timeline ul li {
@@ -269,7 +293,7 @@ body {
     transition: transform 0.5s ease;
 }
 .timeline ul li img:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 @keyframes slideInDown {
@@ -291,3 +315,102 @@ body {
         opacity: 1;
     }
 }
+
+/* ----------------------------------------- CHARACTERS CHARACTERS CHARACTERS ----------------------------------------- */
+
+#personagens {
+    text-align: center;
+}
+
+#personagens h1 {
+    font-family: 'Roboto Serif';
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 139, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgb(19, 41, 61);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    padding-bottom: 60px;
+    text-align: justify;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin: 20px 0 10px;
+    font-family: 'Roboto Serif';
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.card p {
+    font-family: 'Quicksand';
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card a {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 139, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: rgb(255, 203, 0);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------- DOCUMENTS DOCUMENTS DOCUMENTS ----------------------------------------- */
+
