@@ -22,6 +22,37 @@
     </header>
 
     <main>
+        <h1 class="formh1">Entre em contato</h1>
+        <form method="post" action="">
+                <legend>Identificação do Usuário</legend>
+                <p><label for="iNome">Digite seu nome</label>
+                <input type="text" name="tNome" size=65 maxlength="65" placeholder="Nome Completo" /></p>
+                <p><label for="iSenha">Digite sua senha</label>
+                <input type="password" name="tSenha" id="iSenha" size="65" maxlength="8" placeholder="8 dígitos" /></p>
+                <p><label for="iEmail">Digite seu E-Mail</label>
+                <input type="email" name="tEmail" id="iEmail" size="65" maxlength="30" placeholder="E-mail"></p>
+            <br>
+            Qual sua parte favorita do site?
+            <br>
+            <select name="opcoes" multiple size="5">
+                <option value="linha do tempo">Linha do tempo</option>
+                <option value="personagens" selected>Personagens</option>
+                <option value="documentos">Documentos</option>
+                <option value="documentos">Galeria</option>
+            </select>
+            <br>
+            <br>
+            Deixe seus dúvidas, sugestões, ou solicite informações adicionais:
+            <br>
+            <textarea name="Comentários" rows="5" cols="72"></textarea>
+            <input type="submit" value="Enviar formulário">
+            <input type="reset" value="Limpar formulário">
+            <div class="socials">
+            <a href="#"><p>INSTAGRAM: @independenciadobrasil</p></a>
+            <a href="#"><p>FACEBOOK: @independenciadobrasil</p></a>
+            <a href="#"><p>WHATSAPP: (01)3210-0123</p></a>
+            </div>
+        </form>
     </main>
 
     <footer>
