@@ -1192,8 +1192,14 @@ input[type="reset"]:hover {
         font-size: 12px;
     }
 
-    .socials {
+    .contact_container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .socials {
+        flex-direction: row; /* Mantém os ícones alinhados horizontalmente */
+        justify-content: center; /* Centraliza os ícones horizontalmente */
+        margin-top: 20px; /* Move os ícones para baixo */
     }
 }
