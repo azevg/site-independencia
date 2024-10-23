@@ -1198,8 +1198,8 @@ input[type="reset"]:hover {
     }
 
     .socials {
-        flex-direction: row; /* Mantém os ícones alinhados horizontalmente */
-        justify-content: center; /* Centraliza os ícones horizontalmente */
-        margin-top: 20px; /* Move os ícones para baixo */
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
     }
 }
